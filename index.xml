@@ -5,7 +5,8 @@
     <link>https://losyer.github.io/</link>
     <description>Recent content on s.sasaki</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language><atom:link href="https://losyer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>ja-jp</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright><atom:link href="https://losyer.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Second Post</title>
       <link>https://losyer.github.io/post/init-post/</link>
