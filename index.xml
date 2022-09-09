@@ -5,15 +5,14 @@
     <link>https://losyer.github.io/</link>
     <description>Recent content on s.sasaki</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Thu, 08 Sep 2022 13:29:34 +0900</lastBuildDate><atom:link href="https://losyer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>ja-jp</language><atom:link href="https://losyer.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Init Post</title>
+      <title>Second Post</title>
       <link>https://losyer.github.io/post/init-post/</link>
-      <pubDate>Thu, 08 Sep 2022 13:29:34 +0900</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://losyer.github.io/post/init-post/</guid>
-      <description></description>
+      <description> title: &amp;ldquo;Init Post&amp;rdquo; date: 2022-09-08T13:29:34+09:00 draft: true </description>
     </item>
     
   </channel>
