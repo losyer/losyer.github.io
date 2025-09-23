@@ -96,6 +96,31 @@
   margin-bottom: 0.75rem; /* 各 li の間に余白を追加 */
 }
 
+@media (max-width: 768px) {
+  .home {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .profile-img {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    line-height: 1.7;
+  }
+
+  .name {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .headline {
+    font-size: 1.2rem;
+  }
+}
+
 </style>
 
 <script>
