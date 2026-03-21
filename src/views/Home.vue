@@ -40,7 +40,7 @@
         <li v-for="(act_com, i) in activities_committee" :key="i" v-html="act_com"></li>
       </ul>
 
-      <strong>Released LLMs</strong>
+      <strong>LLM Release Contributions</strong>
       <ul class="bullet-points">
         <li v-for="(llm, i) in released_llms" :key="i" v-html="llm"></li>
       </ul>
@@ -119,7 +119,7 @@
   font-size: 1.15rem;
   color: #555;
   display: block;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-bottom: 0rem;
 }
 
