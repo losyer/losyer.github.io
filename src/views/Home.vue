@@ -5,12 +5,9 @@
     <div class="content">
       <h1 class="name">Shota Sasaki</h1>
       <ul class="bullet-points-top">
-        <li>Research Scientist at SB Intuitions Corp. <code>(shota.sasaki@sbintuitions.co.jp)</code></li>
-        <li>Visiting Researcher at Tohoku University FaiLab.</li>
-        <li>Visiting Scientist at RIKEN Center for Advanced Intelligence Projects.</li>
+        <li>Senior Research Scientist at SB Intuitions Corp. <code>(shota.sasaki@sbintuitions.co.jp)</code></li>
+        <li>Visiting Researcher at the Center for Language AI Research, Tohoku University.</li>
       </ul>
-
-      Research Interests: Word embeddings, Short Answer Scoring, Commonsense reasoning, Information Retrieval.
 
       <h2 class="headline">Job</h2>
       <ul class="bullet-points">
@@ -29,7 +26,7 @@
 
       <h2 class="headline">Publications & Presentations (Domestic)</h2>
       <ul class="bullet-points">
-        <li v-for="(pub, i) in publications_dom" :key="i">{{ pub }}</li>
+        <li v-for="(pub, i) in publications_dom" :key="i" v-html="pub"></li>
       </ul>
 
       <h2 class="headline">Activity</h2>
