@@ -9,9 +9,9 @@
         <li>Visiting Researcher at the Center for Language AI Research, Tohoku University.</li>
       </ul>
 
-      <h2 class="headline">Job</h2>
+      <h2 class="headline">Career</h2>
       <ul class="bullet-points">
-        <li v-for="(job, i) in jobs" :key="i">{{ job }}</li>
+        <li v-for="(job, i) in jobs" :key="i" v-html="job"></li>
       </ul>
 
       <h2 class="headline">Education</h2>
@@ -19,19 +19,40 @@
         <li v-for="(edu, i) in educations" :key="i">{{ edu }}</li>
       </ul>
 
-      <h2 class="headline">Publications & Presentations (International)</h2>
+      <h2 class="headline">Activities</h2>
+      <strong>Media</strong>
       <ul class="bullet-points">
-        <li v-for="(pub, i) in publications_int" :key="i">{{ pub }}</li>
+        <li v-for="(act, i) in activities_media" :key="i" v-html="act"></li>
+      </ul>
+
+      <strong>Invited Talk</strong>
+      <ul class="bullet-points">
+        <li v-for="(act, i) in activities_invited_talks" :key="i" v-html="act"></li>
+      </ul>
+
+      <strong>Lecture</strong>
+      <ul class="bullet-points">
+        <li v-for="(act, i) in activities_lecture" :key="i" v-html="act"></li>
+      </ul>
+
+      <strong>Program Committee</strong>
+      <ul class="bullet-points">
+        <li v-for="(act_com, i) in activities_committee" :key="i" v-html="act_com"></li>
+      </ul>
+
+      <strong>Released LLMs</strong>
+      <ul class="bullet-points">
+        <li v-for="(llm, i) in released_llms" :key="i" v-html="llm"></li>
+      </ul>
+
+      <h2 class="headline">Publications & Presentations (International)</h2>
+      <ul class="bullet-points publications">
+        <li v-for="(pub, i) in publications_int" :key="i" v-html="pub"></li>
       </ul>
 
       <h2 class="headline">Publications & Presentations (Domestic)</h2>
-      <ul class="bullet-points">
+      <ul class="bullet-points publications">
         <li v-for="(pub, i) in publications_dom" :key="i" v-html="pub"></li>
-      </ul>
-
-      <h2 class="headline">Activity</h2>
-      <ul class="bullet-points">
-        <li v-for="(act, i) in activities" :key="i">{{ act }}</li>
       </ul>
 
     </div>
@@ -58,7 +79,7 @@
 }
 
 .content {
-  max-width: 750px;   /* テキストの折り返し幅 */
+  max-width: 1050px;   /* テキストの折り返し幅 */
   width: 100%;        /* 画面が狭い場合は縮む */
   margin: 0 auto;     /* 中央寄せ */
   text-align: left;   /* 左寄せ */
@@ -74,7 +95,7 @@
 .headline {
   font-size: 1.4rem;
   color: #666;
-  margin: 1.5rem 0 0.5rem;
+  margin: 3.5rem 0 0.5rem;
 }
 
 .bullet-points-top {
@@ -87,10 +108,27 @@
   list-style: disc;
   padding-left: 1.5rem;
   line-height: 1.6;
+  font-size: 0.9rem;
 }
 
 .bullet-points li {
-  margin-bottom: 0.75rem; /* 各 li の間に余白を追加 */
+  margin-bottom: 0.4rem; /* 各 li の間に余白を追加 */
+}
+
+.content strong {
+  font-size: 1.15rem;
+  color: #555;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+}
+
+.content strong + .bullet-points {
+  margin-top: 0.2rem;
+}
+
+.bullet-points.publications {
+  font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
@@ -125,7 +163,11 @@ import jobData from "@/assets/data/job.json";
 import educationData from "@/assets/data/education.json";
 import publications_intData from "@/assets/data/publications_international.json";
 import publications_domData from "@/assets/data/publications_domestic.json";
-import activitiesData from "@/assets/data/activity.json";
+import activities_committeeData from "@/assets/data/activity_committee.json";
+import activities_mediaData from "@/assets/data/activities_media.json";
+import activities_invited_talksData from "@/assets/data/activities_invited_talks.json";
+import activities_lectureData from "@/assets/data/activities_lecture.json";
+import released_llmsData from "@/assets/data/released_llms.json";
 
 
 export default {
@@ -135,7 +177,11 @@ export default {
       educations: educationData,
       publications_int: publications_intData,
       publications_dom: publications_domData,
-      activities: activitiesData,
+      activities_committee: activities_committeeData,
+      activities_media: activities_mediaData,
+      activities_invited_talks: activities_invited_talksData,
+      activities_lecture: activities_lectureData,
+      released_llms: released_llmsData,
     };
   }
 };
