@@ -5,7 +5,7 @@
     <div class="content">
       <h1 class="name">Shota Sasaki</h1>
       <ul class="bullet-points-top">
-        <li>Senior Research Scientist at SB Intuitions Corp. <code>(shota.sasaki@sbintuitions.co.jp)</code></li>
+        <li>Senior Research Scientist, Team Leader at SB Intuitions Corp. <code>(shota.sasaki@sbintuitions.co.jp)</code></li>
         <li>Visiting Researcher at the Center for Language AI Research, Tohoku University.</li>
       </ul>
 
